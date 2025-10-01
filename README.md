@@ -1,58 +1,92 @@
 # python_labs1
+
 ## Задание №1
+'''python
+name = input("Имя: ").strip()
+age = int(input("Возраст: ").strip())
+print(f"Привет, {name}! Через год тебе будет {age + 1}.")
+'''
+
 ### Описание программы
 Эта программа на Python запрашивает у пользователя его имя и возраст, потом вычисляет возраст пользователя через год и сообщение-приветствие.
 
-![Uploading img01_Kolesnichenko Daria.png…]()
-
-
 ### Пример выполнения
 
-![01output.png](misc/img/lab01/01output.png)
+<img width="1920" height="1200" alt="img01_Kolesnichenko Daria" src="https://github.com/user-attachments/assets/e29941da-78c4-46ca-972a-287437ca12e7" />
+
 
 ## Задание №2
+'''python
+a = "3,5"
+b = "4,25"
+print(f"a={a},b = {b}")
+a = float(a.replace(',', '.'))
+b = float(b.replace(',', '.'))
+sum_result = a + b
+avg_result = sum_result / 2
+print(f"sum={sum_result:.2f}; avg={avg_result:.2f}")
+'''
 ### Описание программы
 Эта программа на Python запрашивает у пользователя два действительных числа, вычисляет их сумму и среднее арифметическое, потом выводит результат.
 
-![img02_Kolesnichenko Daria.png](misc/img/lab01/02.png)
-
-
 ### Пример выполнения
 
-![02output.png](misc/img/lab01/02output.png)
+<img width="1920" height="1200" alt="img02 Kolesnichenko Daria" src="https://github.com/user-attachments/assets/9461057f-a291-4fc2-9e0f-b1ef15821ac6" />
 
 ## Задание №3
+'''python
+price = input("Введите цену: ").strip().replace(',', ".")
+discount = input("Введите скидку: ").strip().replace(',', '.')
+vat = input("Введите НДС: ").strip().replace(',', '.')
+price = float(price)
+discount = float(discount)
+vat = float(vat)
+base = price * (1 - discount / 100)
+vat_amount = base * (vat / 100)
+total = base + vat_amount
+print(f"База после скидки: {base:.2f}")
+print(f"НДС: {vat_amount:.2f}")
+print(f"Итого к оплате: {total:.2f}")
+'''
 ### Описание программы
 Эта программа на Python запрашивает у пользователя цену товара, размер скидки и НДС, потом вычисляет стоимость с учётом скидки, сумму налога и итоговую сумму к оплате.
 
-![img03_Kolesnichenko Daria.png](misc/img/lab01/03.png)
+### Пример выполнения 
 
+<img width="1920" height="1200" alt="img03_Kolesnichenko Daria" src="https://github.com/user-attachments/assets/804d8d9b-397b-4db1-9fc5-c504e2e4fd33" />
 
-### Пример выполнения
-
-![03output.png](misc/img/lab01/03output.png)
 
 ## Задание №4
+'''python
+m = int(input("Минуты: "))
+hours = m // 60
+minutes = m % 60
+print(f"{hours}:{minutes:02d}")
+'''
 ### Описание программы
 Эта программа на Python запрашивает у пользователя количество минут, затем преобразует их в формат часов и минут.
 
-![img04_Kolesnichenko Daria.png](misc/img/lab01/04.png)
-
-
 ### Пример выполнения
 
-![04output.png](misc/img/lab01/04output.png)
+<img width="1920" height="1200" alt="img04_Kolesnichenko Daria" src="https://github.com/user-attachments/assets/34fe5d2b-ca88-46f1-978c-1be0d2ebc148" />
+
 
 ## Задаине №5
+'''python
+fio_input = input("ФИО: ")
+fio_cleaned = fio_input.strip()
+words = fio_cleaned.split()
+initials = ''.join(word[0].upper() for word in words if word)
+print(f"Инициалы: {initials}.")
+print(f"Длина символов: {len(fio_cleaned)}")
+'''
 ### Описание программы
 Эта программа на Python запрашивает у пользователя ФИО,выбирает инициалы и считает общую длину строки(количество символов), включая ФИО.
 
-![img05_Kolesnichenko Daria.png](misc/img/lab01/05.png)
-
-
 ### Пример выполнения
 
-![05output.png](misc/img/lab01/05output.png)
+<img width="1920" height="1200" alt="img05_Kolesnichenko Daria" src="https://github.com/user-attachments/assets/ef90e54b-30cc-4abc-9928-6a328f940d0a" />
+
 
 ## Вывод
 В процессе лабораторной работы я изучила базовые принципы программирования на языке Python. Освоила работу с пользовательским вводом, выполнение математических операций, обработку текстовых данных и форматирование вывода. Также я научилась использовать GitHub для управления версиями кода и ведения проектов.
