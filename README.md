@@ -12,7 +12,8 @@ print(f"Привет, {name}! Через год тебе будет {age + 1}.")
 
 ### Пример выполнения
 
-<img width="1920" height="1200" alt="img01_Kolesnichenko Daria" src="https://github.com/user-attachments/assets/e29941da-78c4-46ca-972a-287437ca12e7" />
+<img width="1920" height="1200" alt="image01_Kolesnichenko Daria" src="https://github.com/user-attachments/assets/2af32bf5-224a-406f-b7eb-b78936f70326" />
+
 
 
 ## Задание №2
