@@ -17,7 +17,7 @@ print(f"Привет, {name}! Через год тебе будет {age + 1}.")
 
 
 ## Задание №2
-'''python
+```python
 a = "3,5"
 b = "4,25"
 print(f"a={a},b = {b}")
@@ -26,7 +26,7 @@ b = float(b.replace(',', '.'))
 sum_result = a + b
 avg_result = sum_result / 2
 print(f"sum={sum_result:.2f}; avg={avg_result:.2f}")
-'''
+```
 ### Описание программы
 Эта программа на Python запрашивает у пользователя два действительных числа, вычисляет их сумму и среднее арифметическое, потом выводит результат.
 
@@ -35,7 +35,7 @@ print(f"sum={sum_result:.2f}; avg={avg_result:.2f}")
 <img width="1920" height="1200" alt="img02 Kolesnichenko Daria" src="https://github.com/user-attachments/assets/9461057f-a291-4fc2-9e0f-b1ef15821ac6" />
 
 ## Задание №3
-'''python
+```python
 price = input("Введите цену: ").strip().replace(',', ".")
 discount = input("Введите скидку: ").strip().replace(',', '.')
 vat = input("Введите НДС: ").strip().replace(',', '.')
@@ -48,7 +48,7 @@ total = base + vat_amount
 print(f"База после скидки: {base:.2f}")
 print(f"НДС: {vat_amount:.2f}")
 print(f"Итого к оплате: {total:.2f}")
-'''
+```
 ### Описание программы
 Эта программа на Python запрашивает у пользователя цену товара, размер скидки и НДС, потом вычисляет стоимость с учётом скидки, сумму налога и итоговую сумму к оплате.
 
@@ -58,12 +58,12 @@ print(f"Итого к оплате: {total:.2f}")
 
 
 ## Задание №4
-'''python
+```python
 m = int(input("Минуты: "))
 hours = m // 60
 minutes = m % 60
 print(f"{hours}:{minutes:02d}")
-'''
+```
 ### Описание программы
 Эта программа на Python запрашивает у пользователя количество минут, затем преобразует их в формат часов и минут.
 
@@ -73,14 +73,14 @@ print(f"{hours}:{minutes:02d}")
 
 
 ## Задаине №5
-'''python
+```python
 fio_input = input("ФИО: ")
 fio_cleaned = fio_input.strip()
 words = fio_cleaned.split()
 initials = ''.join(word[0].upper() for word in words if word)
 print(f"Инициалы: {initials}.")
 print(f"Длина символов: {len(fio_cleaned)}")
-'''
+```
 ### Описание программы
 Эта программа на Python запрашивает у пользователя ФИО,выбирает инициалы и считает общую длину строки(количество символов), включая ФИО.
 
