@@ -160,6 +160,58 @@ print(flatten([1, 2],(3, 4, 5)))
 <img width="1920" height="1200" alt="2025-10-06_20-42-16" src="https://github.com/user-attachments/assets/e8ff9b10-4dc7-47db-a54c-2fbba97fe4d0" />
 
 
+## Задание B
+```python
+def transpose(mat: list[list[float | int]]) -> list[list]:
+    if len(mat) == 0:
+        return []
+    rowlenght = len(mat[0])
+    for row in mat:
+        if len(row) != rowlenght:
+            raise ValueError
+    return [[row[index] for row in mat] for index in range(rowlenght)]
+print(transpose([[1, 2, 3]]))
+print(transpose([[1], [2], [3]]))
+print(transpose([[1, 2], [3, 4]]))
+print(transpose([[]]))
+print(transpose([[1, 2], [3]]))
+```
+
+### Описание программы
+Данная программа реализует функцию transpose(), которая выполняет транспонирование матрицы - операцию, при которой строки матрицы становятся столбцами, а столбцы - строками.
+
+
+### Пример выполнения
+<img width="1920" height="1200" alt="2025-10-06_22-40-21" src="https://github.com/user-attachments/assets/d982a33d-8330-4d24-89fe-99eb32793145" />
+
+
+```python
+def row_sums(mat: list[list[float | int]]) -> list[float]:
+    if len(mat) == 0:
+        return []
+    rowlenght = len(mat[0])
+    for row in mat:
+        if len(row) != rowlenght:
+            raise ValueError
+    return [sum(row) for row in mat]
+print(row_sums([[1, 2, 3], [4, 5, 6]]))
+print(row_sums([[-1, 1], [10, -10]]))
+print(row_sums([[0, 0], [0, 0]]))
+print(row_sums([[1, 2], [3]]))
+```
+
+
+### Описание программы
+
+
+
+### Пример выполнения
+<img width="1920" height="1200" alt="2025-10-06_22-53-53" src="https://github.com/user-attachments/assets/3dc1365c-8efc-4420-b73a-27210bccb772" />
+
+
+
+
+
 
 
 
