@@ -1,5 +1,5 @@
 # python_labs1
-
+## Лабораторная работа №1
 ## Задание №1
 ```python
 name = input("Имя: ").strip()
@@ -117,6 +117,28 @@ print(min_max([]))
 
 ### Пример выполнения
 <img width="1920" height="1200" alt="2025-10-06_20-05-00" src="https://github.com/user-attachments/assets/fe2c8645-e636-413a-b2cc-d95a32543260" />
+
+
+```python
+def unique_sorted(nums: list[float | int]) -> list[float | int]:
+    return sorted(set(nums))
+print(sorted(set([3, 1, 2, 1, 3])))
+print(sorted(set([])))
+print(sorted(set([-1, -1, 0, 2, 2])))
+print(sorted(set([1.0, 1, 2.5, 2.5, 0])))
+```
+### Описание программы
+Эта программа на Python возвращает отсортированный список уникальных элементов из входного списка.
+
+
+### Пример выполнения
+<img width="1920" height="1200" alt="2025-10-06_20-27-06" src="https://github.com/user-attachments/assets/e4ba10e4-5b4b-4375-9c9b-7f04803333c7" />
+
+
+```python
+
+
+
 
 
 
