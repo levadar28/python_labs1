@@ -137,6 +137,29 @@ print(sorted(set([1.0, 1, 2.5, 2.5, 0])))
 
 
 ```python
+def flatten(mat: list[list | tuple]) -> list:
+    result = []
+    for obj in mat:
+        if not isinstance(obj, (list, tuple)):
+            raise TypeError(f"Элемент {obj} не является списком или кортежем")
+        else:
+            for item in obj:
+                result.append(item)
+    return result
+print(flatten([[1, 2], [3, 4]]))
+print(flatten([[1], [], [2, 3]]))
+print(flatten([[1, 2], 'ab']))
+print(flatten([1, 2],(3, 4, 5)))
+```
+
+### Описание программы
+Эта программа на Python преобразует список списков или кортежей в одномерный список.
+
+
+### Пример выполнения
+<img width="1920" height="1200" alt="2025-10-06_20-42-16" src="https://github.com/user-attachments/assets/e8ff9b10-4dc7-47db-a54c-2fbba97fe4d0" />
+
+
 
 
 
