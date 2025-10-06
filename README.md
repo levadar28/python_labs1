@@ -132,7 +132,8 @@ print(sorted(set([1.0, 1, 2.5, 2.5, 0])))
 
 
 ### Пример выполнения
-<img width="1920" height="1200" alt="2025-10-06_20-27-06" src="https://github.com/user-attachments/assets/e4ba10e4-5b4b-4375-9c9b-7f04803333c7" />
+<img width="1920" height="1200" alt="2025-10-06_20-31-06" src="https://github.com/user-attachments/assets/c0b9d0f4-9bc9-4e49-8538-5e00c7b6d7de" />
+
 
 
 ```python
