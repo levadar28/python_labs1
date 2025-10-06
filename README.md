@@ -95,3 +95,32 @@ print(f"Длина символов: {len(fio_cleaned)}")
 
 
 
+
+
+## Лабораторная работа №2
+## Задание №1
+```python
+def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
+    if len(nums) == 0:
+        raise ValueError("Список не может быть пустым")
+    else:
+        return min(nums), max(nums)
+print(min_max([3, -1, 5, 5, 0]))
+print(min_max([42]))
+print(min_max([1.5, 2, 2.0, -3.1]))
+print(min_max([-5, -2, -9]))
+print(min_max([]))
+```
+### Описание программы
+Эта программа на Python находит максимальный и минимальный элмент в списке чисел.Если список пустой, возвращает ошибку.
+
+
+### Пример выполнения
+<img width="1920" height="1200" alt="2025-10-06_20-05-00" src="https://github.com/user-attachments/assets/fe2c8645-e636-413a-b2cc-d95a32543260" />
+
+
+
+
+
+
+
