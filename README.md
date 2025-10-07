@@ -202,11 +202,54 @@ print(row_sums([[1, 2], [3]]))
 
 
 ### Описание программы
-
+Эта программа на Python вычисляет суммы элементов каждой строки в матрице (двумерном списке).
 
 
 ### Пример выполнения
 <img width="1920" height="1200" alt="2025-10-06_22-53-53" src="https://github.com/user-attachments/assets/3dc1365c-8efc-4420-b73a-27210bccb772" />
+
+
+```python
+def transpose(mat: list[list[float | int]]) -> list[list[float | int]]:
+    if len(mat) == 0:
+        return []
+    return [[mat[j][i] for j in range(len(mat))] for i in range(len(mat[0]))]
+
+def col_sums(mat: list[list[float | int]]) -> list[float]:
+    if len(mat) == 0:
+        return []
+    row_length = len(mat[0])
+    for row in mat:
+        if len(row) != row_length:
+            raise ValueError("Все строки матрицы должны иметь одинаковую длину")
+    newmat = transpose(mat)
+    return [sum(row) for row in newmat]
+print(col_sums([[1, 2, 3], [4, 5, 6]]))
+print(col_sums([[-1, 1], [10, -10]]))
+print(col_sums([[0, 0], [0, 0]]))
+print(col_sums([[1, 2], [3]]))
+```
+
+
+### Описание программы
+Эта программа на Python вычисляет суммы столбцов матрицы.
+
+
+### Пример выполнения
+<img width="1920" height="1200" alt="2025-10-07_07-33-18" src="https://github.com/user-attachments/assets/ecca3f04-2069-4b28-98e0-5d9b3a9fd57b" />
+
+
+
+## Задание С
+```python
+
+```
+
+### Описание программы
+
+
+### Пример выполнения
+
 
 
 
